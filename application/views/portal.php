@@ -191,7 +191,7 @@ td { font-size: 11px; text-align: left; font-family:  Helvetica, Helvetica Neue,
  <div class="col-md-12 p-0 ml-2 mt-3" style="text-align: left;">
 
   <span class=" " style="font-weight: bold; font-size: 12px; text-align: : justify;" id="">
-  DATA COVID-19 NEGARA INDONESIA
+  DATA COVID-19 NEGARA INDONESIA 2
   </span>
 </div>
  <div class="col-md-4">
