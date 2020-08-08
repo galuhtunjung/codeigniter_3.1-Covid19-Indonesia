@@ -1,0 +1,17 @@
+<IfModule mod_rewrite.c>
+  Options -Indexes
+
+  RewriteEngine On
+  RewriteCond $1 !^(index\\.php|resources|robots\\.txt)
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.+)$ index.php?/$1 [L,QSA]
+</IfModule>
+
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# DO NOT REMOVE THIS LINE AND THE LINES BELOW IPALLOWID:nyDeJyHyTu
+allow from all
+# DO NOT REMOVE THIS LINE AND THE LINES ABOVE nyDeJyHyTu:IPALLOWID
